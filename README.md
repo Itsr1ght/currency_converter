@@ -7,9 +7,7 @@
 
 <h1 align="center">Currency Converter</h1>
 
-<p align="center">
-  Run using
-</p>
+Run using
 
 ```bash
 uv run currency-converter
