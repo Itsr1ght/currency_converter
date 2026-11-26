@@ -7,3 +7,14 @@ class ConvertResponse(BaseModel):
     amount: str = Field(examples=[100])
     rate: str = Field(examples=[0.90])
     result: str = Field(examples=[90.0])
+
+
+class CurrencyInfo(BaseModel):
+    code: str
+    name: str
+    numeric: str
+
+
+class CurrenciesResponse(BaseModel):
+    count: int
+    currencies: list[CurrencyInfo]
